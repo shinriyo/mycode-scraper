@@ -30,6 +30,8 @@ docker-compose exec python bash      # 起動したPythonコンテナに入る
 MYCODE_EMAIL=you@example.com MYCODE_PASSWORD=p@ssw0rd python scrape.py
 ```
 
+パスワードを読み替えること
+
 ### Pyyhonコンテナに入ってる時に動かない時
 
 ```
@@ -40,6 +42,4 @@ docker-compose restart
 ### URL
 
 http://localhost:7900/?autoconnect=1&resize=scale&password=secret
-
-MYCODE_EMAIL=shinriyo@gmail.com MYCODE_PASSWORD=Sixhjf0611 python scrape.py
 

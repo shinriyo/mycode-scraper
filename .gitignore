@@ -1,7 +1,27 @@
 venv
 localized-pages
 saved_pages
-# mac
+
+# Python関連
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# 環境設定
+.env
+.venv/
+env/
+venv/
+
+# IDE関連
+.vscode/
+.idea/
+
+# オペレーティングシステム関連
 .DS_Store
-# vim
+Thumbs.db
+
+# Swapファイル
 *.swp
+
