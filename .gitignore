@@ -1,3 +1,7 @@
 venv
 localized-pages
 saved_pages
+# mac
+.DS_Store
+# vim
+*.swp
