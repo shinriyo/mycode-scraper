@@ -32,7 +32,7 @@ docker-compose up -d                 # detouched mode option
 docker-compose exec python bash      # 起動したPythonコンテナに入る 
 ```
 
-`saved_pages` フォルダに入ると思います。
+`work/saved_pages` フォルダに保存されます。
 
 ### 実行
 
@@ -51,5 +51,4 @@ http://localhost:7900/?autoconnect=1&resize=scale&password=secret
 exit
 docker-compose restart
 ```
-
 
