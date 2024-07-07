@@ -1,24 +1,26 @@
 """
 The provided Python script is a web crawler that uses Selenium WebDriver and the requests library to automate the process of logging into a website,
- crawling its pages, and downloading content such as HTML and images. 
+ crawling its pages, and downloading content such as HTML and images.
 """
 import os
 import time
 import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 from collections import deque
 from urllib.parse import urljoin, urlparse, parse_qs, urlencode
 
-# Setup Selenium WebDriver using Chrome
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service)
+# Setup Selenium WebDriver using Chrome with remote WebDriver
+options = webdriver.ChromeOptions()
+driver = webdriver.Remote(
+    command_executor='http://selenium:4444/wd/hub',
+    options=options
+)
 
 # Navigate to the login page
 login_url = "https://mycode.jp/login.html"
 driver.get(login_url)
+
 # Retrieve email and password from environment variables
 email = os.getenv("MYCODE_EMAIL")
 password = os.getenv("MYCODE_PASSWORD")
