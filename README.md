@@ -6,6 +6,7 @@ MYCODEが終わったのでスクレイピングする。
 
 ### 内容
 
+```
 mycode-scraper
 ├── docker-compose.yml
 ├── py_context
@@ -14,6 +15,7 @@ mycode-scraper
 └── work
     ├── localize_web_assets.py
     └── scrape.py
+```
 
 ### 使い方
 
